@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
-
+import 'package:counta/pages/home_page.dart';
 
 void main() async {
-  runApp(const MyApp());
+  runApp(const HomePage());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Nota Konter',
+      home: HomePage(),
     );
      
     // home: HomePage(),

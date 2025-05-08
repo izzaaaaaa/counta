@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:counta/pages/home_page.dart';
 class Nota {
   final int id;
   final String nama;
@@ -57,6 +57,12 @@ class CounterNoteState extends State<CounterNote> {
             noHp: noHp,
             harga: harga);
       }
+    });
+  }
+
+  void _deleteNota(int id) {
+    setState(() {
+      notas.removeWhere((nota) => nota.id == id);
     });
   }
 
